@@ -1,23 +1,23 @@
 pipeline{
 agent any
-stages
+stages 
 {
-stage('Build')
-{
-steps{
-echo "Building the project.."
-}
-}
-stage('Test')
+stage('Build') 
 {
 steps{
-echo "Testing the project.."
+echo "Building the Project.........."
 }
 }
-stage('Deploy')
+stage('Test') 
 {
 steps{
-echo "Deploying the project.."
+echo "Testing the Project.........."
+}
+}
+stage('Deploy') 
+{
+steps{
+echo "Deploying the Project.........."
 }
 }
 }
